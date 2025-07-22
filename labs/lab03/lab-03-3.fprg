@@ -4,9 +4,9 @@
         <attribute name="name" value="lab-03-3"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-07-22 12:27:42 PM"/>
+        <attribute name="saved" value="2025-07-22 12:42:38 PM"/>
         <attribute name="created" value="VXNlcjtMQVBUT1AtUk5VNDFLUEk7MjAyNS0wNy0yMjsxMjowMTowNCBQTTsyNzcw"/>
-        <attribute name="edited" value="VXNlcjtMQVBUT1AtUk5VNDFLUEk7MjAyNS0wNy0yMjsxMjoyNzo0MiBQTTs0OzI4OTE="/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtUk5VNDFLUEk7MjAyNS0wNy0yMjsxMjo0MjozOCBQTTs1OzI4OTQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -16,11 +16,11 @@
             <declare name="megabyte" type="Real" array="False" size=""/>
             <assign variable="megabyte" expression="kilobyte * 0.0001"/>
             <declare name="gigabyte" type="Real" array="False" size=""/>
-            <assign variable="gigabyte" expression="kilobyte * 0.00001"/>
+            <assign variable="gigabyte" expression="kilobyte * 0.0000001"/>
             <declare name="terabyte" type="Real" array="False" size=""/>
-            <assign variable="terabyte" expression="kilobyte * 0.000001"/>
+            <assign variable="terabyte" expression="kilobyte * 0.0000000001"/>
             <declare name="petabyte" type="Integer" array="False" size=""/>
-            <assign variable="petabyte" expression="kilobyte * 0.0000001"/>
+            <assign variable="petabyte" expression="kilobyte * 0.0000000000001"/>
             <output expression="megabyte" newline="True"/>
             <output expression="gigabyte" newline="True"/>
             <output expression="terabyte" newline="True"/>
