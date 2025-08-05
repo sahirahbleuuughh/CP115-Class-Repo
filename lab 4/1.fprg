@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-29 11:53:55 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtUk5VNDFLUEk7MjAyNS0wNy0yOTsxMTo0MDoxOCBBTTsyNzY5"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtUk5VNDFLUEk7MjAyNS0wNy0yOTsxMTo1Mzo1NSBBTTsxOzI4ODI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kWh" type="Integer" array="False" size=""/>
+            <input variable="kWh"/>
+            <declare name="unitPrice" type="Real" array="False" size=""/>
+            <if expression="kWh &lt;= 100">
+                <then>
+                    <assign variable="unitPrice" expression="0.30 *kWh"/>
+                </then>
+                <else>
+                    <if expression="kWh &lt;= 200 and kWh &gt; 100">
+                        <then>
+                            <assign variable="unitPrice" expression="30 + (0.50 * (kWh - 100))"/>
+                        </then>
+                        <else>
+                            <assign variable="unitPrice" expression="30 + 50 + (0.75 * (kWh - 200))"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="unitPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

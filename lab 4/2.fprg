@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-29 11:58:55 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtUk5VNDFLUEk7MjAyNS0wNy0yOTsxMTo0MDoxOCBBTTsyNzY5"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtUk5VNDFLUEk7MjAyNS0wNy0yOTsxMTo1ODo1NSBBTTsyOzI4ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="income" type="Real" array="False" size=""/>
+            <input variable="income"/>
+            <declare name="totalTax" type="Real" array="False" size=""/>
+            <if expression="income &lt;= 50000.00">
+                <then>
+                    <assign variable="totalTax" expression="0"/>
+                </then>
+                <else>
+                    <if expression="income &lt;= 100000.00 and income &gt; 50000.01">
+                        <then>
+                            <assign variable="totalTax" expression="(1/100)*income"/>
+                        </then>
+                        <else>
+                            <assign variable="totalTax" expression="(2/100)*income"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="totalTax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

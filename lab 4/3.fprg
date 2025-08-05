@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-29 12:07:45 PM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1AtUk5VNDFLUEk7MjAyNS0wNy0yOTsxMTo0MDoxOCBBTTsyNzY5"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtUk5VNDFLUEk7MjAyNS0wNy0yOTsxMjowNzo0NSBQTTszOzI4OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hour" type="Integer" array="False" size=""/>
+            <input variable="hour"/>
+            <declare name="fee" type="Real" array="False" size=""/>
+            <if expression="hour &lt;= 2">
+                <then>
+                    <assign variable="fee" expression="0"/>
+                    <output expression="fee" newline="True"/>
+                </then>
+                <else>
+                    <if expression="hour &lt;= 5 and hour &gt; 2">
+                        <then>
+                            <assign variable="fee" expression="2*hour"/>
+                            <output expression="fee" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="fee" expression="3*hour"/>
+                            <if expression="fee &gt; 30">
+                                <then>
+                                    <output expression="&quot;you've reached the daily limit&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="fee" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
