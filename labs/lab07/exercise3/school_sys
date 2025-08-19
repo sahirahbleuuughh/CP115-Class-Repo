@@ -1,0 +1,14 @@
+import school_data
+
+print("================\tSCHOOL REPORT\t=============================\n")
+print("NAME\t\tAGE\tID")
+print(f"{school_data.studentName}\t{school_data.studentAge}\t{school_data.studentID}\n")
+print("COURSE CODE\tCOURSE NAME")
+print(f"{school_data.courseCode}\t\t{school_data.courseName}\n")
+print("PAPER 1 SCORE\tPAPER 2 SCORE\tTOTAL SCORE")
+print(f"{school_data.scoreRandom1}\t\t{school_data.scoreRandom2}\t\t{school_data.totalScore}\n")
+print("UPPERCASE NAME\tLOWERCASE NAME\tNAME LENGTH")
+print(f"{school_data.upperName}\t{school_data.lowerName}\t{school_data.nameLength}\n")
+print("SQUARE ROOT OF NAME")
+print(f"{school_data.sqrtScore}\n")
+print("=====================================================================")
